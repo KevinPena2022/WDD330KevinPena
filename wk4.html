@@ -5,8 +5,136 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 4</title>
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
-    
+    <header class="header-content">
+        <h1>W04 Readings Part 1</h1>
+    </header>
+    <main class="main-content">
+        <h3>Ch11: Further Functions Completed</h3>
+        <ul>
+            <li>Functions are “First class objects” They can have methods and properties.</li>
+            <li>We can call other functions using the call()method. Null should be passed as the first argument.</li>
+            <li>We can add many properties to a function as we can do it with and object.</li>
+        </ul>
+   
+        <h4>Functions can be call immediately</h4>
+        <p>
+            Example of syntaxis:<br>
+        (function() {<br>
+            // Code that runs in your function<br>
+            let userAge = 23;<br>
+            let currentYear = 2022;<br>
+            let born = currentYear - userAge;<br>
+            console.log(born);<br>
+        })()<br>
+    </p>
+
+        -You can add as many as you want inside the same function, they will be performed and the order they were declared
+        -Function that Define and Rewrite themselves 
+        - Depending on the order you call it, Functions can rewrite themselves.
+        <h3>Recursive Functions</h3>
+        -	This have been one of the hardest topics for me “Recursive function is one that invokes itself until a certain condition is met”. An example can be “Calculating the factorial of a number”
+        Promises
+        -	The future result of a function. On the other hand, promises are a good practice to handle results / errors it can take positive results and when things don’t as expect it can handle the errors.
+        <h3>Function Scope - Closures</h3>
+        -	We can create inner functions inside a function. These functions have access to all variables even the ones outside the function where they were called.
+        <h3>Ch8. Transforms and Transitions Completed</h3>
+        <ul>
+            <li>The transform property is used the add the following effects to element in css3: translate, rotate, scale and skew. </li>
+            <li>In my words “transform” is a like a class containing 4 functions.</li>
+            <li>Translation: Moves the element using the x and Y axis </li>
+            <li>Scaling: It allows you to increase or decrease the size of an element proportionally </li>
+            <li>Rotation: It allows you to rotate the element by specifying the angle value. Example : </li>
+            <li>transform: rotate(10deg)</li>
+        </ul>
+      
+        <h3>Transitions:</h3>
+        <p>The transitions make the changes visible over time can be seconds even minutes.</p>
+        <p>webkit is use so older browser cand support the transitions properties.</p>
+ 
+        <h3>Animations</h3>
+        <p>“Animations allow you to control each step of the animation via keyframes”</p>
+        <p>In order to create an animation, we need keyframes. </p>
+
+        <p> @-webkit-keyframes myAnimation { </p>
+            <p>/* put animation keyframes here */</p>
+        <p>}</p> 
+        <p>
+            @keyframes myAnimation { <br>
+                /* put animation keyframes here */<br>
+            }
+        </p>
+
+        <p>You need to use the webkit to make it available in older browsers</p>
+        <p>Keyframes contain a name and then in the body the animation.</p>
+        
+        <p>Note: I have to be careful naming animations, The words: forwards, running, or alternate are key terms in CSS.</p>
+
+
+        
+        <h3>Benefits of using transforms, transition and animations:</h3>
+        <p>It makes our websites more dynamic.</p>
+         <p>It improves the user experience.</p> 
+
+         <hr>
+
+         <h2>Notes Part 2</h2>
+         <h3>Getting Started with JSON Web Tokens Complete:</h3>
+         
+        <h4>What is JSON Web Token?</h4>
+        <ul>
+            <li>Is a compact standard that is used to share and transmits information in a safe way.</li>
+            <li> JSON Web Tokens are most use for two things: Authentication (an example could be a log in to an account) and Information exchange (This helps to securely exchange information to one another. Some examples could be banks, schools, government jobs).
+            </li>
+        </ul>
+        
+        <h4>The main three parts of the JWT are:</h4>
+        <p>-Header (Two parts: the type and the hashing algorithm)
+        </p>
+        <p>
+            Example: 
+        {
+        "alg": "HS256",
+        "typ": "JWT"
+        }
+        </p>
+        
+
+        <h4>Payload (There are three types of claims: Reserved, Public and Private)</h4>
+
+        <p>
+            
+        Example:
+        {
+        "sub": "1234567890",
+        "name": "John Doe",
+        "admin": true
+        }
+        </p>
+
+        <h4>Signatures.</h4>
+
+        <h4>How JSON Web Tokens Work?</h4>
+        <p>Note: A good practice is not to store data for a long time in the browser storage because of lack of security.</p>
+        
+        <h4>How JSON Web Tokens Work on my own words:</h4>
+        <p>The browser makes the request, the server sends a Web Token, The Computer Sends a JWT on the authorization header. Finally, the server checks the signatures and sends the information to the client.
+            In my opinion we just have to be careful with specifying the parts of the of the JSON Web Tokens.
+        </p>
+        
+        <h4>Question: How is Cyber security involved on JSON Web Tokens.?</h4>
+
+        <h4>Develop, Debug and Learn Completed</h4>
+        <ul>
+            <li>On the learning phase is important to experiment, even when our work does not look professional it help us to refine our techniques. Practice, Practice and Practice.</li>
+            <li>We should always think on the end users. We should make their life easier, We need to help them to use tools that are going to help them.</li>
+        </ul>  
+
+    </main>
+    <footer>
+        <p>Developed by Kevin Pena </p>
+    </footer>
 </body>
 </html>
