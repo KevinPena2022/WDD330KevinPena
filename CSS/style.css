@@ -1,19 +1,40 @@
 *{
     margin: 0 auto;
 }
+img{
+    max-width: 100%;
+}
 body{
     font-family: 'Oswald', sans-serif;  
-    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
 header{
     text-align: center;
+}
+h2,h3,h4{
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
 .header-content{
     padding-top: 50px;
     padding-bottom: 50px;
     background-color: cadetblue;
 }
+.father{
+    text-align: center;
+    padding: 25px;
+}
+.father ul {
+    list-style: none ;
+    
+}
+
+.main-content{
+    width: 750px;
+    text-align: left;
+    padding: 70px;
+}
 
 footer{
     background-color: aliceblue;
+    text-align: center;
 }
