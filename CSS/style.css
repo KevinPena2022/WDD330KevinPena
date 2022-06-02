@@ -1,6 +1,5 @@
 html {
     box-sizing: border-box;
-    
 }
 
 *,
@@ -36,22 +35,28 @@ h2,h3,h4{
     padding-bottom: 50px;
     background-color: cadetblue;
 }
-/* .father{
-    text-align: center;
-    padding: 25px;
+.father{
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
-.father ul {
-    list-style: none ;
-    
-} */
 
 .main-content{
     width: 750px;
     text-align: left;
     padding: 70px;
 }
-
+.space{
+    height: 270px;
+}
 footer{
     background-color: aliceblue;
-    text-align: center;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    
+
+}
+footer p {
+    margin: auto auto;
 }
